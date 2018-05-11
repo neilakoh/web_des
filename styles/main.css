@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+.header_wrapper {
+  width: 100hw;
+}
+
+.header_topBar_1 {
+  height: 45px;
+  width: 100%;
+  background-image: url("http://www.commentnation.com/backgrounds/images/dark_clay_red_upholstery_fabric_texture_background_seamless.jpg");
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-origin: content-box;
+  background-size: 45px 45px;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+.header_topBar_2 {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.slide_show {
+  height: 350px;
+  width: 100%;
+}
+
+#left_wrapper {
+  height: 45px;
+  width: 50%;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+#right_wrapper {
+  height: 45px;
+  width: 50%;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  color: #ffffff;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+.social_media_wrapper {
+  height: 45px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}

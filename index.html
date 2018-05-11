@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+
+    <link rel="stylesheet" href="./styles/main.css"></link>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./components/index.js"></script>
+    <script>
+      var { tab_title, site_title, site_description } = getSiteConfig();
+      document.title = tab_title;
+    </script>
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <script>
+      var { email } = personalInfo();
+
+      document.getElementById('header').innerHTML = header(emailModule());
+      document.getElementById('email').innerHTML = email;
+
+      str = "";
+      for(var i=0; i<socialMedias().length; i++) {
+        str = str + "<div class='social_media_wrapper'><img src='"+socialMedias()[i].img_url+"' height='28px' width='28px' /></div>";
+      }
+
+      $("#right_wrapper").html(str);
+    </script>
+  </body>
+</html>
